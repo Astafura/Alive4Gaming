@@ -1,76 +1,433 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div id="wrapper">
-        <div id="container">
-            <div id="welcome">
-                <h1><span>Welcome to</span> Symfony {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}</h1>
+    <div id="page" class="shell">
+        <!-- Header -->
+        <div id="header">
+            <!-- Top Navigation -->
+            <div id="top-nav">
+                <ul>
+                    <li class="home"><a href="http://all-free-download.com/free-website-templates/">home</a></li>
+                    <li><a href="http://all-free-download.com/free-website-templates/">pc</a></li>
+                    <li><a href="http://all-free-download.com/free-website-templates/">xbox</a></li>
+                    <li><a href="http://all-free-download.com/free-website-templates/">360</a></li>
+                    <li><a href="http://all-free-download.com/free-website-templates/">wii</a></li>
+                    <li><a href="http://all-free-download.com/free-website-templates/">ps3</a></li>
+                    <li><a href="http://all-free-download.com/free-website-templates/">ps2</a></li>
+                    <li><a href="http://all-free-download.com/free-website-templates/">psp</a></li>
+                    <li class="last"><a href="http://all-free-download.com/free-website-templates/">ds</a></li>
+                </ul>
             </div>
-
-            <div id="status">
-                <p>
-                    <svg id="icon-status" width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z" fill="#759E1A"/></svg>
-
-                    Your application is now ready. You can start working on it at:
-                    <code>{{ base_dir }}</code>
-                </p>
+            <!-- / Top Navigation -->
+            <div class="cl">&nbsp;</div>
+            <!-- Logo -->
+            <div id="logo">
+                <h1><a href="http://all-free-download.com/free-website-templates/">game<span>portal</span></a></h1>
+                <p class="description">your game zone</p>
             </div>
-
-            <div id="next">
-                <h2>What's next?</h2>
-                <p>
-                    <svg id="icon-book" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="-12.5 9 64 64" enable-background="new -12.5 9 64 64" xml:space="preserve">
-                        <path fill="#AAA" d="M6.8,40.8c2.4,0.8,4.5-0.7,4.9-2.5c0.2-1.2-0.3-2.1-1.3-3.2l-0.8-0.8c-0.4-0.5-0.6-1.3-0.2-1.9
-                            c0.4-0.5,0.9-0.8,1.8-0.5c1.3,0.4,1.9,1.3,2.9,2.2c-0.4,1.4-0.7,2.9-0.9,4.2l-0.2,1c-0.7,4-1.3,6.2-2.7,7.5
-                            c-0.3,0.3-0.7,0.5-1.3,0.6c-0.3,0-0.4-0.3-0.4-0.3c0-0.3,0.2-0.3,0.3-0.4c0.2-0.1,0.5-0.3,0.4-0.8c0-0.7-0.6-1.3-1.3-1.3
-                            c-0.6,0-1.4,0.6-1.4,1.7s1,1.9,2.4,1.8c0.8,0,2.5-0.3,4.2-2.5c2-2.5,2.5-5.4,2.9-7.4l0.5-2.8c0.3,0,0.5,0.1,0.8,0.1
-                            c2.4,0.1,3.7-1.3,3.7-2.3c0-0.6-0.3-1.2-0.9-1.2c-0.4,0-0.8,0.3-1,0.8c-0.1,0.6,0.8,1.1,0.1,1.5c-0.5,0.3-1.4,0.6-2.7,0.4l0.3-1.3
-                            c0.5-2.6,1-5.7,3.2-5.8c0.2,0,0.8,0,0.8,0.4c0,0.2,0,0.2-0.2,0.5c-0.2,0.3-0.3,0.4-0.2,0.7c0,0.7,0.5,1.1,1.2,1.1
-                            c0.9,0,1.2-1,1.2-1.4c0-1.2-1.2-1.8-2.6-1.8c-1.5,0.1-2.8,0.9-3.7,2.1c-1.1,1.3-1.8,2.9-2.3,4.5c-0.9-0.8-1.6-1.8-3.1-2.3
-                            c-1.1-0.7-2.3-0.5-3.4,0.3c-0.5,0.4-0.8,1-1,1.6c-0.4,1.5,0.4,2.9,0.8,3.4l0.9,1c0.2,0.2,0.6,0.8,0.4,1.5c-0.3,0.8-1.2,1.3-2.1,1
-                            c-0.4-0.2-1-0.5-0.9-0.9c0.1-0.2,0.2-0.3,0.3-0.5s0.1-0.3,0.1-0.3c0.2-0.6-0.1-1.4-0.7-1.6c-0.6-0.2-1.2,0-1.3,0.8
-                            C4.3,38.4,4.7,40,6.8,40.8z M46.1,20.9c0-4.2-3.2-7.5-7.1-7.5h-3.8C34.8,10.8,32.7,9,30.2,9L-2.3,9.1c-2.8,0.1-4.9,2.4-4.9,5.4
-                            L-7,58.6c0,4.8,8.1,13.9,11.6,14.1l34.7-0.1c3.9,0,7-3.4,7-7.6L46.1,20.9z M-0.3,36.4c0-8.6,6.5-15.6,14.5-15.6
-                            c8,0,14.5,7,14.5,15.6S22.1,52,14.2,52C6.1,52-0.3,45-0.3,36.4z M42.1,65.1c0,1.8-1.5,3.1-3.1,3.1H4.6c-0.7,0-3-1.8-4.5-4.4h30.4
-                            c2.8,0,5-2.4,5-5.4V17.9h3.7c1.6,0,2.9,1.4,2.9,3.1V65.1L42.1,65.1z"/>
-                    </svg>
-
-                    Read the documentation to learn
-                    <a href="http://symfony.com/doc/{{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION')[:3] }}/page_creation.html">
-                        How to create your first page in Symfony
-                    </a>
-                </p>
+            <!-- / Logo -->
+            <!-- Main Navigation -->
+            <div id="main-nav">
+                <div class="bg-right">
+                    <div class="bg-left">
+                        <ul>
+                            <li><a href="http://all-free-download.com/free-website-templates/">community</a></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">forum</a></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">video</a></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">cheats</a></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">features</a></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">downloads</a></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">sports</a></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">tech</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
+            <!-- / Main Navigation -->
+            <div class="cl">&nbsp;</div>
+            <!-- Sort Navigation -->
+            <div id="sort-nav">
+                <div class="bg-right">
+                    <div class="bg-left">
+                        <div class="cl">&nbsp;</div>
+                        <ul>
+                            <li class="first active first-active"><a href="http://all-free-download.com/free-website-templates/">Review</a><span class="sep">&nbsp;</span></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">Previews </a><span class="sep">&nbsp;</span></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">New Releases</a><span class="sep">&nbsp;</span></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">Top Games</a><span class="sep">&nbsp;</span></li>
+                            <li><a href="http://all-free-download.com/free-website-templates/">All Games</a><span class="sep">&nbsp;</span></li>
+                        </ul>
+                        <div class="cl">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <!-- / Sort Navigation -->
         </div>
+        <!-- / Header -->
+        <!-- Main -->
+        <div id="main">
+            <div id="main-bot">
+                <div class="cl">&nbsp;</div>
+                <!-- Content -->
+                <div id="content">
+                    <div class="block">
+                        <div class="block-bot">
+                            <div class="block-cnt">
+                                <div id="slider">
+                                    <div class="buttons"> <span class="prev">prev</span> <span class="next">next</span> </div>
+                                    <div class="holder">
+                                        <div class="frame">&nbsp;</div>
+                                        <div class="content">
+                                            <ul>
+                                                <li class="fragment">
+                                                    <div class="image">
+                                                        <img src="img/images/img10.jpg" alt="" />
+                                                    </div>
+                                                    <div class="cnt">
+                                                        <div class="cl">&nbsp;</div>
+                                                        <div class="side-a">
+                                                            <h4>StarCraft II</h4>
+                                                            <ul class="rating">
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star empty-star">&nbsp;</span></li>
+                                                                <li><span class="votes">1.456 votes</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="side-b">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scelerisque leo sodales sit amet. Curabitur volutpat lorem euismod nunc tincidunt condi- mentum. Suspendisse gravida elementum mauris, in vulputate justo ultrices sit amet.</p>
+                                                        </div>
+                                                        <div class="cl">&nbsp;</div>
+                                                    </div>
+                                                </li>
+                                                <li class="fragment">
+                                                    <div class="image"> <img src="img/images/img10.jpg" alt="" /> </div>
+                                                    <div class="cnt">
+                                                        <div class="cl">&nbsp;</div>
+                                                        <div class="side-a">
+                                                            <h4>StarCraft II</h4>
+                                                            <ul class="rating">
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star empty-star">&nbsp;</span></li>
+                                                                <li><span class="votes">1.456 votes</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="side-b">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scelerisque leo sodales sit amet. Curabitur volutpat lorem euismod nunc tincidunt condi- mentum. Suspendisse gravida elementum mauris, in vulputate justo ultrices sit amet.</p>
+                                                        </div>
+                                                        <div class="cl">&nbsp;</div>
+                                                    </div>
+                                                </li>
+                                                <li class="fragment">
+                                                    <div class="image"> <img src="img/images/img10.jpg" alt="" /> </div>
+                                                    <div class="cnt">
+                                                        <div class="cl">&nbsp;</div>
+                                                        <div class="side-a">
+                                                            <h4>StarCraft II</h4>
+                                                            <ul class="rating">
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star empty-star">&nbsp;</span></li>
+                                                                <li><span class="votes">1.456 votes</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="side-b">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scelerisque leo sodales sit amet. Curabitur volutpat lorem euismod nunc tincidunt condi- mentum. Suspendisse gravida elementum mauris, in vulputate justo ultrices sit amet.</p>
+                                                        </div>
+                                                        <div class="cl">&nbsp;</div>
+                                                    </div>
+                                                </li>
+                                                <li class="fragment">
+                                                    <div class="image"> <img src="img/images/img10.jpg" alt="" /> </div>
+                                                    <div class="cnt">
+                                                        <div class="cl">&nbsp;</div>
+                                                        <div class="side-a">
+                                                            <h4>StarCraft II</h4>
+                                                            <ul class="rating">
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star full-star">&nbsp;</span></li>
+                                                                <li><span class="star empty-star">&nbsp;</span></li>
+                                                                <li><span class="votes">1.456 votes</span></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="side-b">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scelerisque leo sodales sit amet. Curabitur volutpat lorem euismod nunc tincidunt condi- mentum. Suspendisse gravida elementum mauris, in vulputate justo ultrices sit amet.</p>
+                                                        </div>
+                                                        <div class="cl">&nbsp;</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block-bot">
+                            <div class="head">
+                                <div class="head-cnt"> <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
+                                    <h3>Top Reviews</h3>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="col-articles articles">
+                                <div class="cl">&nbsp;</div>
+                                <div class="article">
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img4.jpg" alt="" /></a> </div>
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">F.E.A.R.2</a></h4>
+                                    <p class="console"><strong>PSP3</strong></p>
+                                </div>
+                                <div class="article">
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img5.jpg" alt="" /></a> </div>
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">FALLOUT 3</a></h4>
+                                    <p class="console"><strong>PC</strong></p>
+                                </div>
+                                <div class="article">
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img6.jpg" alt="" /></a> </div>
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">STARCRAF II</a></h4>
+                                    <p class="console"><strong>PC</strong></p>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block-bot">
+                            <div class="head">
+                                <div class="head-cnt"> <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
+                                    <h3>Editor`s Pick</h3>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                            </div>
+                            <div class="row-articles articles">
+                                <div class="cl">&nbsp;</div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img7.jpg" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">F.E.A.R.2</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scelerisque leo sodales sit amet. Curabitur volutpat lorem euismod nunc tincidunt condimentum. Suspendisse gravida elementum mauris, in vulputate justo ultrices sit amet. Maecenas ultricies elit </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img8.jpg" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">FALLOUT 3</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scelerisque leo sodales sit amet. Curabitur volutpat lorem euismod nunc tincidunt condimentum. Suspendisse gravida elementum mauris, in vulputate justo ultrices sit amet. Maecenas ultricies elit in mi sagittis fringilla.</p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article last-article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img9.jpg" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">STARCRAF II</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scelerisque leo sodales sit amet. Curabitur volutpat lorem euismod nunc tincidunt condimentum. Suspendisse gravida elementum mauris, in vulputate justo ultrices sit amet. Maecenas ultricies elit in mi sagittis fringilla.</p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Content -->
+                <!--  -->
+                <div id="sidebar">
+                    <!-- Search -->
+                    <div id="search" class="block">
+                        <div class="block-bot">
+                            <div class="block-cnt">
+                                <form action="http://all-free-download.com/free-website-templates/" method="post">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="fieldplace">
+                                        <input type="text" class="field" value="Search" title="Search" />
+                                    </div>
+                                    <input type="submit" class="button" value="GO" />
+                                    <div class="cl">&nbsp;</div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Search -->
+                    <!-- Sign In -->
+                    <div id="sign" class="block">
+                        <div class="block-bot">
+                            <div class="block-cnt">
+                                <div class="cl">&nbsp;</div>
+                                <a href="http://all-free-download.com/free-website-templates/" class="button button-left">sign in</a> <a href="http://all-free-download.com/free-website-templates/" class="button button-right">create account</a>
+                                <div class="cl">&nbsp;</div>
+                                <p class="center"><a href="http://all-free-download.com/free-website-templates/">Help?</a>&nbsp;&nbsp;<a href="http://all-free-download.com/free-website-templates/">Forgot Password?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Sign In -->
+                    <div class="block">
+                        <div class="block-bot">
+                            <div class="head">
+                                <div class="head-cnt">
+                                    <h3>Top Games</h3>
+                                </div>
+                            </div>
+                            <div class="image-articles articles">
+                                <div class="cl">&nbsp;</div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img1.gif" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">TMNT</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img2.gif" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">F.E.A.R.2</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img3.gif" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">Steel Fury</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                                <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block-bot">
+                            <div class="head">
+                                <div class="head-cnt">
+                                    <h3>Top Videos</h3>
+                                </div>
+                            </div>
+                            <div class="image-articles articles">
+                                <div class="cl">&nbsp;</div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img1.gif" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">FALLOUT3</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img2.gif" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">Crysis</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img3.gif" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">F.E.A.R.2</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                                <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block-bot">
+                            <div class="head">
+                                <div class="head-cnt">
+                                    <h3>Latest Articles</h3>
+                                </div>
+                            </div>
+                            <div class="text-articles articles">
+                                <div class="article">
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">Dolor amet sodales leo</a></h4>
+                                    <small class="date">21.07.09</small>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scele- risque leo sodales sit amet</p>
+                                </div>
+                                <div class="article">
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">Amet sed lorem sit</a></h4>
+                                    <small class="date">20.07.09</small>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="article">
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">Adipsicing elit elementum</a></h4>
+                                    <small class="date">19.07.09</small>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie.</p>
+                                </div>
+                                <div class="article">
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">Consectetur elit sed molestie</a></h4>
+                                    <small class="date">15.07.09</small>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie.</p>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                                <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Sidebar -->
+                <div class="cl">&nbsp;</div>
+                <!-- Footer -->
+                <div id="footer">
+                    <div class="navs">
+                        <div class="navs-bot">
+                            <div class="cl">&nbsp;</div>
+                            <ul>
+                                <li><a href="http://all-free-download.com/free-website-templates/">community</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">forum</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">video</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">cheats</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">features</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">downloads</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">sports</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">tech</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="http://all-free-download.com/free-website-templates/">pc</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">xbox</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">360</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">wii</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">ps3</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">ps2</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">psp</a></li>
+                                <li><a href="http://all-free-download.com/free-website-templates/">ds</a></li>
+                            </ul>
+                            <div class="cl">&nbsp;</div>
+                        </div>
+                    </div>
+                    <p class="copy">&copy; Sitename.com. Design by <a href="http://chocotemplates.com">ChocoTemplates.com</a></p>
+                </div>
+                <!-- / Footer -->
+            </div>
+        </div>
+        <!-- / Main -->
     </div>
-{% endblock %}
-
-{% block stylesheets %}
-<style>
-    body { background: #F5F5F5; font: 18px/1.5 sans-serif; }
-    h1, h2 { line-height: 1.2; margin: 0 0 .5em; }
-    h1 { font-size: 36px; }
-    h2 { font-size: 21px; margin-bottom: 1em; }
-    p { margin: 0 0 1em 0; }
-    a { color: #0000F0; }
-    a:hover { text-decoration: none; }
-    code { background: #F5F5F5; max-width: 100px; padding: 2px 6px; word-wrap: break-word; }
-    #wrapper { background: #FFF; margin: 1em auto; max-width: 800px; width: 95%; }
-    #container { padding: 2em; }
-    #welcome, #status { margin-bottom: 2em; }
-    #welcome h1 span { display: block; font-size: 75%; }
-    #icon-status, #icon-book { float: left; height: 64px; margin-right: 1em; margin-top: -4px; width: 64px; }
-    #icon-book { display: none; }
-
-    @media (min-width: 768px) {
-        #wrapper { width: 80%; margin: 2em auto; }
-        #icon-book { display: inline-block; }
-        #status a, #next a { display: block; }
-
-        @-webkit-keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-        @keyframes fade-in { 0% { opacity: 0; } 100% { opacity: 1; } }
-        .sf-toolbar { opacity: 0; -webkit-animation: fade-in 1s .2s forwards; animation: fade-in 1s .2s forwards;}
-    }
-</style>
 {% endblock %}
