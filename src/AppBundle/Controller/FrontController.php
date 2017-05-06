@@ -5,6 +5,8 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Bundle\FrameworkBundle\Utils;
+use ClientInformation;
 
 class FrontController extends Controller
 {
@@ -13,8 +15,12 @@ class FrontController extends Controller
      */
     public function indexAction(Request $request)
     {
+        $render = 'default/index.html.twig';
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', [
+        if(!in_array($this->get('client.informations')->get_client_ip(),["90.4.244.231"])){
+            $render = 'errors/maintenance.html.twig';
+        }
+        return $this->render($render, [
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
         ]);
     }
