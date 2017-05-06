@@ -1,6 +1,7 @@
 Alive4Gaming
 ========================
 
+Server-Localhost: php bin/console server:run
 
 <<<<<<<<<<<<<<<<<< En Construction >>>>>>>>>>>>>>>>>>>>>
 
