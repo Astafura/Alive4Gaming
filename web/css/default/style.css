@@ -13,6 +13,7 @@ body {
 a img {
     border: 0;
 }
+
 a {
     color: #a0a0a0;
     text-decoration: underline;
@@ -151,26 +152,14 @@ a:hover {
 }
 
 #main-nav {
-    float: right;
-    display: inline;
-    line-height: 32px;
-    background: url(images/main-nav-bg.gif) repeat-x 0 0;
-}
-
-#main-nav .bg-right {
-    background: url(images/main-nav-bg-right.gif) no-repeat right 0;
-}
-
-#main-nav .bg-left {
-    background: url(images/main-nav-bg-left.gif) no-repeat 0 0;
-    padding-left: 32px;
-    width: 676px;
+    height: 40px;
+    background: black;
+    color: white;
 }
 
 #main-nav ul {
     height: 32px;
     font-size: 10px;
-    color: #a8a8a8;
     text-transform: uppercase;
 }
 
@@ -178,7 +167,11 @@ a:hover {
     float: left;
     display: inline;
     list-style-type: none;
-    background: url(images/main-nav-sep.gif) no-repeat right 0;
+}
+
+#main-nav ul li:hover{
+    background: darkorange;
+    color: black;
 }
 
 #main-nav ul li a {
