@@ -38,6 +38,8 @@ framework:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    paths:
+     '%kernel.root_dir%/../app/Resources/views/default/components': defaultComponents
 
 # Doctrine Configuration
 doctrine:

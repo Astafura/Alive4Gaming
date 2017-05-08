@@ -3,33 +3,162 @@
 {% block body %}
     <div id="page" class="shell">
         <!-- Header -->
-        <div id="header">
-            <!-- Logo -->
-            <div id="logo">
-                <img src="{{ asset('img/logo.png') }}"/>
-                <h1>Alive4Gaming.fr</h1>
-            </div>
-            <!-- / Logo -->
-            <!-- Main Navigation -->
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="http://all-free-download.com/free-website-templates/">Accueil</a></li>
-                    <li><a href="http://all-free-download.com/free-website-templates/">Actualités</a></li>
-                    <li><a href="http://all-free-download.com/free-website-templates/">Jeux</a></li>
-                    <li><a href="http://all-free-download.com/free-website-templates/">Clans</a></li>
-                    <li><a href="http://all-free-download.com/free-website-templates/">Membres</a></li>
-                    <li><a href="http://all-free-download.com/free-website-templates/">Forum</a></li>
-                    <li><a href="http://all-free-download.com/free-website-templates/">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- / Main Navigation -->
-            <div class="cl">&nbsp;</div>
-        </div>
+        {% include '@defaultComponents/header.html.twig' %}
         <!-- / Header -->
         <!-- Main -->
         <div id="main">
             <div id="main-bot">
                 <div class="cl">&nbsp;</div>
+                <!--  -->
+                <div id="sidebar">
+                    <!-- Search -->
+                    <div id="search" class="block">
+                        <div class="block-bot">
+                            <div class="block-cnt">
+                                <form action="http://all-free-download.com/free-website-templates/" method="post">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="fieldplace">
+                                        <input type="text" class="field" value="Rechercher" title="Search" />
+                                    </div>
+                                    <input type="submit" class="button" value="GO" />
+                                    <div class="cl">&nbsp;</div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Search -->
+                    <!-- Sign In -->
+                    <div id="sign" class="block">
+                        <div class="block-bot">
+                            <div class="block-cnt">
+                                <div class="cl">&nbsp;</div>
+                                <a href="http://all-free-download.com/free-website-templates/" class="button button-left">sign in</a> <a href="http://all-free-download.com/free-website-templates/" class="button button-right">create account</a>
+                                <div class="cl">&nbsp;</div>
+                                <p class="center"><a href="http://all-free-download.com/free-website-templates/">Help?</a>&nbsp;&nbsp;<a href="http://all-free-download.com/free-website-templates/">Forgot Password?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Sign In -->
+                    <div class="block">
+                        <div class="block-bot">
+                            <div class="head">
+                                <div class="head-cnt">
+                                    <h3>Jeux</h3>
+                                </div>
+                            </div>
+                            <div class="image-articles articles">
+                                <div class="cl">&nbsp;</div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://alive4gaming.fr/jeux/lol">League of Legends</a></h4>
+                                        <p>Le beau jeu</p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://alive4gaming.fr/jeux/csgo">CSGO</a></h4>
+                                        <p>Jeux de morts </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://alive4gaming.fr/hots">HOTS</a></h4>
+                                        <p>Cool</p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                                <a href="http://all-free-download.com/free-website-templates/" class="view-all">Tout voir</a>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block-bot">
+                            <div class="head">
+                                <div class="head-cnt">
+                                    <h3>Dernières Vidéos</h3>
+                                </div>
+                            </div>
+                            <div class="image-articles articles">
+                                <div class="cl">&nbsp;</div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img1.gif" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">FALLOUT3</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img2.gif" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">Crysis</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="article">
+                                    <div class="cl">&nbsp;</div>
+                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img3.gif" alt="" /></a> </div>
+                                    <div class="cnt">
+                                        <h4><a href="http://all-free-download.com/free-website-templates/">F.E.A.R.2</a></h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                    </div>
+                                    <div class="cl">&nbsp;</div>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                                <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block-bot">
+                            <div class="head">
+                                <div class="head-cnt">
+                                    <h3>Derniers articles</h3>
+                                </div>
+                            </div>
+                            <div class="text-articles articles">
+                                <div class="article">
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">Dolor amet sodales leo</a></h4>
+                                    <small class="date">21.07.09</small>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scele- risque leo sodales sit amet</p>
+                                </div>
+                                <div class="article">
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">Amet sed lorem sit</a></h4>
+                                    <small class="date">20.07.09</small>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                </div>
+                                <div class="article">
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">Adipsicing elit elementum</a></h4>
+                                    <small class="date">19.07.09</small>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie.</p>
+                                </div>
+                                <div class="article">
+                                    <h4><a href="http://all-free-download.com/free-website-templates/">Consectetur elit sed molestie</a></h4>
+                                    <small class="date">15.07.09</small>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie.</p>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                                <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Sidebar -->
                 <!-- Content -->
                 <div id="content">
                     <div class="block">
@@ -48,14 +177,13 @@
                                                     <div class="cnt">
                                                         <div class="cl">&nbsp;</div>
                                                         <div class="side-a">
-                                                            <h4>StarCraft II</h4>
+                                                            <h4>Alive4Gaming</h4>
                                                             <ul class="rating">
                                                                 <li><span class="star full-star">&nbsp;</span></li>
                                                                 <li><span class="star full-star">&nbsp;</span></li>
                                                                 <li><span class="star full-star">&nbsp;</span></li>
                                                                 <li><span class="star full-star">&nbsp;</span></li>
                                                                 <li><span class="star empty-star">&nbsp;</span></li>
-                                                                <li><span class="votes">1.456 votes</span></li>
                                                             </ul>
                                                         </div>
                                                         <div class="side-b">
@@ -206,161 +334,9 @@
                     </div>
                 </div>
                 <!-- / Content -->
-                <!--  -->
-                <div id="sidebar">
-                    <!-- Search -->
-                    <div id="search" class="block">
-                        <div class="block-bot">
-                            <div class="block-cnt">
-                                <form action="http://all-free-download.com/free-website-templates/" method="post">
-                                    <div class="cl">&nbsp;</div>
-                                    <div class="fieldplace">
-                                        <input type="text" class="field" value="Search" title="Search" />
-                                    </div>
-                                    <input type="submit" class="button" value="GO" />
-                                    <div class="cl">&nbsp;</div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- / Search -->
-                    <!-- Sign In -->
-                    <div id="sign" class="block">
-                        <div class="block-bot">
-                            <div class="block-cnt">
-                                <div class="cl">&nbsp;</div>
-                                <a href="http://all-free-download.com/free-website-templates/" class="button button-left">sign in</a> <a href="http://all-free-download.com/free-website-templates/" class="button button-right">create account</a>
-                                <div class="cl">&nbsp;</div>
-                                <p class="center"><a href="http://all-free-download.com/free-website-templates/">Help?</a>&nbsp;&nbsp;<a href="http://all-free-download.com/free-website-templates/">Forgot Password?</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- / Sign In -->
-                    <div class="block">
-                        <div class="block-bot">
-                            <div class="head">
-                                <div class="head-cnt">
-                                    <h3>Top Games</h3>
-                                </div>
-                            </div>
-                            <div class="image-articles articles">
-                                <div class="cl">&nbsp;</div>
-                                <div class="article">
-                                    <div class="cl">&nbsp;</div>
-                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img1.gif" alt="" /></a> </div>
-                                    <div class="cnt">
-                                        <h4><a href="http://all-free-download.com/free-website-templates/">TMNT</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
-                                    </div>
-                                    <div class="cl">&nbsp;</div>
-                                </div>
-                                <div class="article">
-                                    <div class="cl">&nbsp;</div>
-                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img2.gif" alt="" /></a> </div>
-                                    <div class="cnt">
-                                        <h4><a href="http://all-free-download.com/free-website-templates/">F.E.A.R.2</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
-                                    </div>
-                                    <div class="cl">&nbsp;</div>
-                                </div>
-                                <div class="article">
-                                    <div class="cl">&nbsp;</div>
-                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img3.gif" alt="" /></a> </div>
-                                    <div class="cnt">
-                                        <h4><a href="http://all-free-download.com/free-website-templates/">Steel Fury</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
-                                    </div>
-                                    <div class="cl">&nbsp;</div>
-                                </div>
-                                <div class="cl">&nbsp;</div>
-                                <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
-                                <div class="cl">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="block-bot">
-                            <div class="head">
-                                <div class="head-cnt">
-                                    <h3>Top Videos</h3>
-                                </div>
-                            </div>
-                            <div class="image-articles articles">
-                                <div class="cl">&nbsp;</div>
-                                <div class="article">
-                                    <div class="cl">&nbsp;</div>
-                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img1.gif" alt="" /></a> </div>
-                                    <div class="cnt">
-                                        <h4><a href="http://all-free-download.com/free-website-templates/">FALLOUT3</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
-                                    </div>
-                                    <div class="cl">&nbsp;</div>
-                                </div>
-                                <div class="article">
-                                    <div class="cl">&nbsp;</div>
-                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img2.gif" alt="" /></a> </div>
-                                    <div class="cnt">
-                                        <h4><a href="http://all-free-download.com/free-website-templates/">Crysis</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
-                                    </div>
-                                    <div class="cl">&nbsp;</div>
-                                </div>
-                                <div class="article">
-                                    <div class="cl">&nbsp;</div>
-                                    <div class="image"> <a href="http://all-free-download.com/free-website-templates/"><img src="img/images/img3.gif" alt="" /></a> </div>
-                                    <div class="cnt">
-                                        <h4><a href="http://all-free-download.com/free-website-templates/">F.E.A.R.2</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
-                                    </div>
-                                    <div class="cl">&nbsp;</div>
-                                </div>
-                                <div class="cl">&nbsp;</div>
-                                <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
-                                <div class="cl">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="block-bot">
-                            <div class="head">
-                                <div class="head-cnt">
-                                    <h3>Latest Articles</h3>
-                                </div>
-                            </div>
-                            <div class="text-articles articles">
-                                <div class="article">
-                                    <h4><a href="http://all-free-download.com/free-website-templates/">Dolor amet sodales leo</a></h4>
-                                    <small class="date">21.07.09</small>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie urna, id scele- risque leo sodales sit amet</p>
-                                </div>
-                                <div class="article">
-                                    <h4><a href="http://all-free-download.com/free-website-templates/">Amet sed lorem sit</a></h4>
-                                    <small class="date">20.07.09</small>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                </div>
-                                <div class="article">
-                                    <h4><a href="http://all-free-download.com/free-website-templates/">Adipsicing elit elementum</a></h4>
-                                    <small class="date">19.07.09</small>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie.</p>
-                                </div>
-                                <div class="article">
-                                    <h4><a href="http://all-free-download.com/free-website-templates/">Consectetur elit sed molestie</a></h4>
-                                    <small class="date">15.07.09</small>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie.</p>
-                                </div>
-                                <div class="cl">&nbsp;</div>
-                                <a href="http://all-free-download.com/free-website-templates/" class="view-all">view all</a>
-                                <div class="cl">&nbsp;</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- / Sidebar -->
                 <div class="cl">&nbsp;</div>
                 <!-- Footer -->
-                <div id="footer">
-                <p class="copy">Designed By <a href="#">Alive4Gaming.fr</a></p>
-                </div>
+                {% include '@defaultComponents/footer.html.twig' %}
                 <!-- / Footer -->
             </div>
         </div>

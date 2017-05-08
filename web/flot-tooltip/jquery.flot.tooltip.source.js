@@ -5,7 +5,7 @@
             show: false,
             cssClass: "flotTip",
             content: "%s | X: %x | Y: %y",
-            // allowed templates are:
+            // allowed components are:
             // %s -> series label,
             // %c -> series color,
             // %lx -> x axis label (requires flot-axislabels plugin https://github.com/markrcote/flot-axislabels),
@@ -401,8 +401,8 @@
             return '';
         }
 
-	/* replacement of %ct and other multi-character templates must
-	   precede the replacement of single-character templates 
+	/* replacement of %ct and other multi-character components must
+	   precede the replacement of single-character components
 	   to avoid conflict between '%c' and '%ct'  and similar substrings
 	*/
 	if (customText)

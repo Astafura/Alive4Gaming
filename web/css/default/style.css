@@ -247,15 +247,15 @@ a:hover {
 }
 
 #sidebar {
-    float: left;
-    display: inline;
-    width: 226px;
+    float: right;
+    width: 20%;
 }
 
 #content {
-    float: right;
+    float: left;
     display: inline;
-    width: 657px;
+    width: 80%;
+    padding-left: 30%;
 }
 
 .block {
@@ -276,19 +276,21 @@ a:hover {
 }
 
 .block .head {
-    padding-left: 15px;
+    height: 40px;
 }
 
 .block .head .head-cnt {
     line-height: 38px;
     height: 38px;
-    padding-right: 13px;
 }
 
 .block .head h3 {
     font-size: 15px;
     font-weight: bold;
     color: #262727;
+    text-align: center;
+    line-height: 40px;
+    background: darkorange;
 }
 
 .block .head .view-all {
@@ -318,7 +320,7 @@ a:hover {
 
 #sidebar .block {
     background-color: #484848;
-    width: 226px;
+    border-radius: 5px;
 }
 
 #search .block-cnt {
@@ -353,7 +355,7 @@ a:hover {
 }
 
 #sign .block-cnt {
-    padding: 6px 5px 5px 5px;
+
 }
 
 #sign .button {
@@ -370,6 +372,8 @@ a:hover {
 #sign .button {
     width: 105px;
     height: 29px;
+    background: darkorange;
+    border-radius: 5px;
 }
 
 #sign .button:hover {
