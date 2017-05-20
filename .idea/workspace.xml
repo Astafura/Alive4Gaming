@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3befd62-6c95-4a0d-b68c-4815046c304f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/compass_library.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/node_modules/owl.carousel/docs_src/assets/scss/.sass-cache/ad3908b43800934753143fdfc82a5df2d28a6aa4/_brightness.scssc" afterPath="$PROJECT_DIR$/web/node_modules/owl.carousel/docs_src/assets/scss/.sass-cache/ad3908b43800934753143fdfc82a5df2d28a6aa4/_brightness.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/node_modules/owl.carousel/docs_src/assets/scss/.sass-cache/f60248c36cb9b7336bc7d5cbfbc9526760bad811/_opacity.scssc" afterPath="$PROJECT_DIR$/web/node_modules/owl.carousel/docs_src/assets/scss/.sass-cache/f60248c36cb9b7336bc7d5cbfbc9526760bad811/_opacity.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/node_modules/owl.carousel/docs_src/assets/scss/.sass-cache/f60248c36cb9b7336bc7d5cbfbc9526760bad811/_transition.scssc" afterPath="$PROJECT_DIR$/web/node_modules/owl.carousel/docs_src/assets/scss/.sass-cache/f60248c36cb9b7336bc7d5cbfbc9526760bad811/_transition.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/node_modules/owl.carousel/src/scss/.sass-cache/ad3908b43800934753143fdfc82a5df2d28a6aa4/_brightness.scssc" afterPath="$PROJECT_DIR$/web/node_modules/owl.carousel/src/scss/.sass-cache/ad3908b43800934753143fdfc82a5df2d28a6aa4/_brightness.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/node_modules/owl.carousel/src/scss/.sass-cache/f60248c36cb9b7336bc7d5cbfbc9526760bad811/_opacity.scssc" afterPath="$PROJECT_DIR$/web/node_modules/owl.carousel/src/scss/.sass-cache/f60248c36cb9b7336bc7d5cbfbc9526760bad811/_opacity.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/node_modules/owl.carousel/src/scss/.sass-cache/f60248c36cb9b7336bc7d5cbfbc9526760bad811/_transition.scssc" afterPath="$PROJECT_DIR$/web/node_modules/owl.carousel/src/scss/.sass-cache/f60248c36cb9b7336bc7d5cbfbc9526760bad811/_transition.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Alive4Gaming.iml" afterPath="$PROJECT_DIR$/.idea/Alive4Gaming.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
-    </list>
+    <list default="true" id="e3befd62-6c95-4a0d-b68c-4815046c304f" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -564,15 +549,15 @@
       <workItem from="1495223243342" duration="622000" />
       <workItem from="1495282387281" duration="622000" />
       <workItem from="1495288281176" duration="2432000" />
-      <workItem from="1495290844894" duration="1348000" />
+      <workItem from="1495290844894" duration="1622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60903000" />
+    <option name="totallyTimeSpent" value="61177000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
