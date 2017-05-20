@@ -1,10 +1,27 @@
 <div id="header">
-    <!-- Logo -->
-    <div id="logo">
-        <img src="{{ asset('img/logo.png') }}"/>
-        <h1>Alive4Gaming.fr</h1>
+
+    <div class="topbar">
+        <div class="container topbar-menu">
+            <div class="col-lg-6 no-padding">
+                <div class="social">
+
+                </div>
+            </div>
+            <div class="col-lg-6 no-padding login">
+                <span class="btn btn-small topbar-login">
+                    <a href="#myModalL" data-toggle="modal">
+                        <i class="fa fa-user-circle-o"></i>
+                        Login
+                    </a>
+                </span>
+            </div>
+        </div>
     </div>
-    <!-- / Logo -->
+    <div class="container logo">
+        <a class="brand">
+            <img src="{{ asset('img/logo.png') }}"/>
+        </a>
+    </div>
     <!-- Main Navigation -->
 
     {%  include '@defaultComponents/nav.html.twig' %}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a340130d-fdf9-4604-aa47-923db3a22457" name="Alive4Gaming" url="http://ftp.cluster020.hosting.ovh.net">
+        <fileTransfer host="ftp.cluster020.hosting.ovh.net" port="21" rootFolder="/www">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

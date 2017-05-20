@@ -40,6 +40,7 @@ twig:
     strict_variables: '%kernel.debug%'
     paths:
      '%kernel.root_dir%/../app/Resources/views/default/components': defaultComponents
+     '%kernel.root_dir%/../app/Resources/views/admin/Components': adminComponents
 
 # Doctrine Configuration
 doctrine:
