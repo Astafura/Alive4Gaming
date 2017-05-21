@@ -16,4 +16,9 @@
 /web/bundles/
 
 .idea/workspace.xml
+<<<<<<< HEAD
+.idea/workspace.xml
+=======
+.idea/workspace.xml
+>>>>>>> origin/front
 .idea/workspace.xml
